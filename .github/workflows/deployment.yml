@@ -1,7 +1,6 @@
 name: Deploy Project
 on: push
 jobs:
-
   test:
     runs-on: ubuntu-latest
     steps:
@@ -15,7 +14,6 @@ jobs:
         run: npm ci
       - name: Run tests
         run: npm test
-
   deploy:
     runs-on: ubuntu-latest
       - name: Get code
